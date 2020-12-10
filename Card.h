@@ -17,20 +17,17 @@ class Card {
     ~Card();
     // deconst
 
-    int getRank();
+    int getVal();
     // gets value of Card
 
     void flip(); 
     // flips card up or down depending on starting pos
 
+    bool isFaceUp();
+    // returns if the card if face up or not
+
  private: 
     rank mRank; 
     suit mSuit; 
     bool mIsFaceUp;
-
-
-    
-
-
-
 };
